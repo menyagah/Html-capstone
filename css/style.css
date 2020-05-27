@@ -5,3 +5,12 @@
     padding: 0;
     box-sizing: inherit;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.7;
+    box-sizing: border-box;
+}
