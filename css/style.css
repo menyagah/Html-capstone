@@ -31,6 +31,7 @@ body {
 .header__nav-box {
     width: 70rem;
     background-color: lightcoral;
+    justify-content: space-around;
     padding:0;
     margin-right: 2em;
     height: 5rem;
@@ -41,4 +42,9 @@ body {
     height: 5rem;
     background-color: lightcoral;
     padding: 0;
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
 }
