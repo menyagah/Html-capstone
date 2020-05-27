@@ -23,6 +23,12 @@ body {
     justify-content: space-between;
 }
 
+
+.logo {
+    height: 8rem;
+    width: 9rem;
+}
+
 .header__nav-box {
     display: flex;
     align-items: center;
@@ -38,11 +44,6 @@ body {
 
 .nav-items-1 {
     width: 13rem;
-}
-
-.logo {
-    height: 8rem;
-    width: 9rem;
 }
 
 .header__icon {
@@ -61,7 +62,7 @@ body {
     color: #d35266;
 }
 
-.btn {
+.header__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,16 +72,16 @@ body {
     transition: all .2s;
 }
 
-.btn:hover {
+.header__btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 }
 
-.btn:active {
+.header__btn:active {
     transform: translateY(-1px);
 }
 
-.btn-link {
+.header__btn-link {
     text-decoration: none;
     color: #fff;
     font-size: 1.4rem;
@@ -91,7 +92,7 @@ body {
 .header__avatar-box {
     display: flex;
     align-items: center;
-    padding-right: 7em;
+    padding-right: 8em;
 }
 
 .user-nav__icon-box {
@@ -144,4 +145,25 @@ body {
 .user-nav__user-name {
     color: #fff;
     padding-right: .3em;
+}
+
+.user-nav__icon-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .05em .09em rgba(0, 0, 0, .2);
+}
+
+.user-nav__icon-box:active {
+    transform: translateY(-1px);
+}
+
+.main {
+    background-image: linear-gradient(
+                      to right bottom,
+                        rgb(211, 82, 102, 0.8),
+                       rgb(56, 56, 56, 0.8)),
+                      url(../img/main.jpg);
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
