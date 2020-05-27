@@ -9,13 +9,42 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__nav-box">
-            <img src="img/logo.png" alt="logo" class="logo">
-        </div>
-        <div class="header__avatar-box"></div>
+        <nav class="header__nav-box">
+            <ul class="header__nav-box">
+                <li class="nav-items">
+                    <a href="#" class="logo"><img src="img/unnamed.png" alt="logo" class="logo"></a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="link" ><ion-icon name="home" class="header__icon"></ion-icon>Home</a>
+                </li>
+                <li class="nav-items-1">
+                    <a href="#" class="link"><ion-icon name="apps" class="header__icon"></ion-icon>Collections</a>
+                </li>
+                <li class="nav-items-1">
+                    <a href="#" class="link"><ion-icon name="cart" class="header__icon"></ion-icon>Purchase List</a>
+                </li>
+                <li class="nav-items-1 btn">
+                    <a href="#" class="btn-link">POST AN AD</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header__avatar-box">
+            <div class="user-nav__icon-box">
+                <svg class="chat__icon">
+                    <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+                <span class="user-nav__notification">4</span>
+            </div>
+
+            <div class="user-nav__user">
+                <span class="user-nav__user-name">Martin</span>
+                <img src="img/user.jpg" alt="user avatar" class="user-nav__user-photo">
+            </div>
+            
+        </nav>
     </header>
     <main></main>
     <footer></footer>
-    
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
