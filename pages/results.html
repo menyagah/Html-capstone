@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:100,200,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Pet Feeds Store</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav-box">
+            <ul class="header__nav-box">
+                <li class="nav-items">
+                    <a href="#" class="logo"><img src="../img/unnamed.png" alt="logo" class="logo"></a>
+                </li>
+                <li class="nav-items">
+                    <a href="../index.html" class="link" ><ion-icon name="home" class="header__icon"></ion-icon>Home</a>
+                </li>
+                <li class="nav-items-1">
+                    <a href="#" class="link"><ion-icon name="apps" class="header__icon"></ion-icon>Collections</a>
+                </li>
+                <li class="nav-items-1">
+                    <a href="#" class="link"><ion-icon name="cart" class="header__icon"></ion-icon>Purchase List</a>
+                </li>
+                <li class="nav-items-1 header__btn">
+                    <a href="#" class="header__btn-link">POST AN AD</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header__avatar-box">
+            <div class="user-nav__icon-box">
+                <svg class="chat__icon">
+                    <use xlink:href="../img/sprite.svg#icon-chat"></use>
+                </svg>
+                <span class="user-nav__notification">4</span>
+            </div>
+
+            <div class="user-nav__user">
+                <span class="user-nav__user-name">Martin</span>
+                <img src="../img/user.jpg" alt="user avatar" class="user-nav__user-photo">
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-results">
+            <div class="text-box-results">
+                <h1 class="heading-primary-results">
+                    <span class="heading-primary-main-results">mifugo</span>
+                    <span class="heading-primary-sub-results">Search around 50,000 items waiting to be sold!</span>
+                </h1>
+
+                <form action="#">
+                   <div class="text-box-1">
+                       <div class="heading-btn__cont">
+                           <div class="dropdown">
+                            <button class="dropbtn"><ion-icon name="caret-down-outline"></ion-icon>All Departments</button>
+                            <div class="dropdown-content">
+                              <a href="#">Dogs</a>
+                              <a href="#">Cats</a>
+                              <a href="#">Birds</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <input type="text"  placeholder="What are you looking for" class="input">
+        
+                    <input type="text"  placeholder="pick your location" class="input">
+        
+                    <div class="btn-search">
+                        <a href="#" class="btn-search__link">Search</a>
+                    </div> 
+                </form> 
+            </div>
+    
+            
+        </section>
+
+        <section class="search-results">
+            <div class="search-results__heading">
+                <h2 class="hot-ad__text">2 Results for "Dog food" in San jose in Category "Dogs"</h2>
+                
+            </div>
+            <div class="card-heading--bar-result"></div>
+            <div class="card-heading--bar-result2"></div>
+
+            <div class="search-results-items">
+                <div class="hot-ad__main">
+                    <div class="hot-ad__cont">
+                      
+                      <a href="#" class="hot-ad__photo"></a>
+                      <div class="hot-ad__story">
+                          
+                          <h2 class="hot-ad__text-pink">Dog food(With the best nutrients)</h2>
+                          <p class="hot-ad__text-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut rerum<br>
+                               porro dicta repellendus est omnis. Neque iure repudiandae vel inventore, minus quasi culpa? <br>
+                               Fugiat atque temporibus qui earum repudiandae.
+                          </p>
+                          <p class="hot-ad__text-par"><strong class="strong">By:</strong> John Roaster</p>
+                          <p class="hot-ad__text-par"><strong class="strong">Location:</strong> Nairobi</p>
+                          <div class="hot-ads__btn">
+                              <div class="btn-search-1-results">
+                                  <a href="#" class="btn-search__link-1">450$</a>
+                              </div> 
+                              <div class="btn-search-2-results">
+                                  <a href="#" class="btn-search__link-1"><ion-icon name="cart" class="header__icon"></ion-icon>Purchase</a>
+                              </div> 
+                          </div>    
+                      </div>    
+                    </div>
+                  </div>
+            </div>
+
+            <div class="search-results-items-1">
+                <div class="hot-ad__main">
+                    <div class="hot-ad__cont">
+                      
+                      <a href="#" class="hot-ad__photo"></a>
+                      <div class="hot-ad__story">
+                          
+                          <h2 class="hot-ad__text-pink">Dog food(With the best nutrients)</h2>
+                          <p class="hot-ad__text-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut rerum<br>
+                               porro dicta repellendus est omnis. Neque iure repudiandae vel inventore, minus quasi culpa? <br>
+                               Fugiat atque temporibus qui earum repudiandae.
+                          </p>
+                          <p class="hot-ad__text-par"><strong class="strong">By:</strong> John Roaster</p>
+                          <p class="hot-ad__text-par"><strong class="strong">Location:</strong> Nairobi</p>
+                          <div class="hot-ads__btn">
+                              <div class="btn-search-1-results">
+                                  <a href="#" class="btn-search__link-1">450$</a>
+                              </div> 
+                              <div class="btn-search-2-results">
+                                  <a href="#" class="btn-search__link-1"><ion-icon name="cart" class="header__icon"></ion-icon>Purchase</a>
+                              </div> 
+                          </div>    
+                      </div>    
+                    </div>
+                  </div>
+            </div>
+               
+            
+           
+        </section>
+        
+
+        
+
+        
+        
+    </main>
+    <footer></footer>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
