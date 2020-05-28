@@ -1,7 +1,7 @@
 * ,
 *::after,
 *::before {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: inherit;
 }
@@ -21,6 +21,8 @@ body {
     height: 5rem;
     display: flex;
     justify-content: space-between;
+    width: auto;
+    overflow: hidden;
 }
 
 
@@ -114,8 +116,7 @@ body {
 .chat__icon {
     height: 2rem;
     width: 2rem;
-    fill: #888;
-    
+    fill: #888;    
 }
 
 .chat__icon:hover {
@@ -170,17 +171,18 @@ body {
                         rgb(211, 82, 102, 0.8),
                        rgb(56, 56, 56, 0.8)),
                       url(../img/main.jpg);
-    height: 60vh;
+    height: 14%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-box {
-    position: absolute;
-    top: 30%;
-    left: 48%;
-    transform: translate(-50%, -50%);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .heading-primary {
@@ -205,17 +207,13 @@ body {
     font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: .1rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
 }
 
 .text-box-1 {
     display: flex;
     justify-content: center;
-    position: absolute;
-    width: 100rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;    
 }
 
 .dropdown a {
@@ -223,7 +221,7 @@ body {
 }
 
 .dropdown .dropbtn {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: 300;
     border: none;
     outline: none;
@@ -313,6 +311,7 @@ body {
 .hot-ad {
     flex-direction: column;
     padding-top: 3rem;
+    padding-bottom: 3rem;
     background-image: linear-gradient(
                       to right bottom,
                         rgba(255, 254, 254, 0.8),
@@ -393,6 +392,232 @@ body {
     font-size: 1.4rem;
 }
 
-main {
+main { /* For testing purposes only*/
     height: 2000px;
 }
+
+.pet-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    background-color: rgb(241, 241, 241);
+}
+
+.pet-food__grid {
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    grid-template-rows: 20% 79%;
+    grid-gap: 1%;
+    width: 95%;
+    height: 80%;
+    justify-content: center;   
+    align-items: center;
+}
+
+.card-heading {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card-heading--cont {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.card-heading--bar {
+    border: #c7c7c7 solid 0.5px;
+    width: 100%;
+}
+
+.card-heading--left {
+    font-size: 1.6rem;
+    color: #646363;
+    font-weight: 300;
+}
+
+.card-heading__main {
+    color: #383838;
+    font-weight: 900;
+    font-size: 1.9rem;
+}
+
+.pet-food__card {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+.pet-food__card-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+
+.pet-food__card-2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+
+.pet-food__card-3 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+
+.pet-food__card-4 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+
+.card-image,
+.card-image-1,
+.card-image-2,
+.card-image-3,
+.card-image-4,
+.card-image--1,
+.card-image--2,
+.card-image--3,
+.card-image--4,
+.card-image--5,
+.card-image---1,
+.card-image---2,
+.card-image---3,
+.card-image---4,
+.card-image---5 {
+    height: 50%;
+    background-image: url(../img/kiwi-food.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-image-1 {
+    background-image: url(../img/dog-food2.jpg);
+}
+
+.card-image-2 {
+    background-image: url(../img/meow-mix.jpg);
+}
+
+.card-image-3 {
+    background-image: url(../img/hamster.jpg);
+}
+
+.card-image-4 {
+    background-image: url(../img/horse.png);
+}
+
+.card-image--1 {
+    background-image: url(../img/pet1.jpg);
+}
+
+.card-image--2 {
+    background-image: url(../img/pet2.jpg);
+}
+
+.card-image--3 {
+    background-image: url(../img/pet3.jpg);
+}
+
+.card-image--4 {
+    background-image: url(../img/pet4.jpg);
+}
+
+.card-image--5 {
+    background-image: url(../img/pet5.jpg);
+}
+
+.card-image---1 {
+    background-image: url(../img/e1.jpg);
+}
+
+.card-image---2 {
+    background-image: url(../img/e2.jpg);
+}
+
+.card-image---3 {
+    background-image: url(../img/e3.jpg);
+}
+
+.card-image---4 {
+    background-image: url(../img/e4.jpg);
+}
+
+.card-image---5 {
+    background-image: url(../img/e5.jpg);
+}
+
+.card-text {
+    height: 32%;
+    padding: 3%;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    height: 20%;
+}
+
+.card-text--main {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #383838;
+    line-height: 1;
+}
+
+.card-text--sub {
+    color: #d35266;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.card-text--last {
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.card-text--region {
+    color: #383838;
+}
+
+.card__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: #888;
+}
+
+.pet-food__card,
+.pet-food__card-1,
+.pet-food__card-2,
+.pet-food__card-3,
+.pet-food__card-4{
+    border-radius: 3px;
+    border: #888 3px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, .5);
+    transition: transform .3s;
+}
+
+.pet-food__card:hover,
+.pet-food__card-1:hover,
+.pet-food__card-2:hover,
+.pet-food__card-3:hover,
+.pet-food__card-4:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+}
+
