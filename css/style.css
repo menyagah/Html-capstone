@@ -1,7 +1,7 @@
 * ,
 *::after,
 *::before {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
@@ -400,7 +400,7 @@ main { /* For testing purposes only*/
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50rem;
+    height: 53rem;
     background-color: rgb(241, 241, 241);
 }
 
@@ -621,3 +621,138 @@ main { /* For testing purposes only*/
     transform: translateY(-1.5rem) scale(1.03);
 }
 
+
+@media (max-width: 768px) {
+    
+    .header__nav-box {
+        padding-left: 0;
+    }
+
+    .logo {
+        height: 5rem;
+        width: 5rem;
+    }
+    .header__btn {
+        display: none;
+    }
+
+    .header__avatar-box {
+        padding-right: 1em;
+    }
+
+    .user-nav__icon-box {
+        padding: 0 1em;
+    }
+
+    .user-nav__user-photo {
+        height: 2.75rem;
+        width: 2.75rem;
+    }
+    
+    .user-nav__user-name {
+        color: #fff;
+        padding-right: .06em;
+    }
+
+    .nav-items {
+        width: 5rem;
+    }
+    
+    .nav-items-1 {
+        width: 7rem;
+    }
+    
+    .header__icon {
+        padding-right: .2em;
+    }
+    
+    .link {
+        font-size: .7rem; 
+    }
+
+    .user-nav__notification {
+        right: -.1rem;  
+    }
+
+    .input,
+    .text-box-1,
+    .btn-search,
+    .hot-ad {
+        display: none;
+    }
+
+    .main {
+        height: 8%;
+    }
+
+    .heading-primary-main {
+        font-size: 3rem;   
+    }
+    
+    .heading-primary-sub {
+        font-size: .7rem;
+    }
+
+    .card-heading--left {
+        font-size: 1rem;
+    }
+    
+    .card-heading__main {
+        font-size: 1.5rem;
+    }
+
+    .pet-food {
+        height: 90rem; 
+    }
+
+    .pet-food__grid {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 30% 30% 30%;
+        grid-gap: 1%;
+        width: 95%;
+        height: 100%;
+    }
+
+    .pet-food__card {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 100%;   
+    }
+
+    .pet-food__card-1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 100%;    
+    }
+    
+    .pet-food__card-2 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 100%;  
+    }
+    
+    .pet-food__card-3 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        height: 100%;   
+    }
+    
+    .pet-food__card-4 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        height: 100%;   
+    }
+
+    .card-text--main {
+        font-size: 1.4rem;
+    }
+    
+    .card-text--sub {
+        font-size: 1.2rem;
+    }
+
+
+
+
+ 
+}
