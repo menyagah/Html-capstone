@@ -667,7 +667,7 @@ main { /* For testing purposes only*/
     }
     
     .link {
-        font-size: .8rem; 
+        font-size: .7rem; 
     }
 
     .user-nav__notification {
@@ -690,7 +690,7 @@ main { /* For testing purposes only*/
     }
     
     .heading-primary-sub {
-        font-size: 1rem;
+        font-size: .7rem;
     }
 
     .card-heading--left {
