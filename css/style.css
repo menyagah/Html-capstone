@@ -80,7 +80,7 @@ body {
 .link:hover,
 .logo:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(226, 211, 211, 0.7);
+  box-shadow: 0 10px 20px rgba(29, 29, 29, 0.7);
 }
 
 .header__btn:active,
