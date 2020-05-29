@@ -183,7 +183,7 @@ body {
 
 .main-results{
     justify-content: flex-start;
-    height: 8%;
+    height: auto;
     padding: 4rem
 }
 
@@ -194,8 +194,9 @@ body {
 }
 
 .text-box-results {
+    padding: 2rem;
     padding-top: 1rem;
-    padding-bottom: 1rem
+    padding-bottom: 1rem;
 }
 
 .heading-primary,
@@ -335,8 +336,9 @@ body {
 .search-results {
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 10% 45% 45%;
-    height: 53rem;
+    grid-template-rows: 8% 45% 47%;
+    height: 75rem;
+    padding: 3rem;
 }
 
 .search-results__heading {
@@ -353,25 +355,95 @@ body {
 
 .card-heading--bar-result2 {
     grid-column: 1/2;
-    grid-row: 1/5;
+    grid-row: 1/5;   
+    background-color: #f9f9f9;
 }
 
 .search-results-items {
     grid-column: 2/3;
     grid-row: 2/3;
     padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+    width: 95%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 2px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, .5);
 }
 
 .search-results-items-1 {
     grid-column: 2/3;
     grid-row: 3/4;
     padding: 2rem;
+    height: 90%;
+    width: 95%;
+    margin-left: 2rem;
+    overflow: hidden;
+    margin-top: 3rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, .5);
 }
 
+.search-results-image {
+    background-image: url(../img/pet3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100%;
+    width: 45%;
 
+}
 
+.search-results-text {
+    height: 85%;
+    width: 70%;
+    padding-left: 9px;
+}
+.checkbox {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
 
+.checkbox-2{
+    grid-column: 1/2;
+    grid-row: 2/5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
 
+.checkbox-cont--top {
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-text {
+    padding-left: 1rem;
+    font-size: 2rem;
+    padding-right: 1rem;
+    color: #646363;
+}
+
+.checkbox-heading {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: #383838;
+}
+
+.checkbox-2__cont {
+    padding-top: 3rem;
+}
 
 .hot-ad,
 .hot-ad__cont,
@@ -393,7 +465,7 @@ body {
 }
 
 .hot-ad__main {
-    padding: 5px;
+    padding: 7px;
     border-radius: 2px;
     box-shadow: 0 3px 14px rgba(0, 0, 0, .5);
     transition: transform .3s;
@@ -404,19 +476,22 @@ body {
 }
 
 
-.hot-ad__cont {
+.hot-ad__cont,
+.hot-ad__cont-results {
     justify-content: space-between;
     width: 74rem;
 }
 
 .hot-ad__text {
     width: 74rem;
+    padding-left: .3em;
     text-transform: uppercase;
     color: #888;
     font-size: 1.5rem;
     line-height: 2;
 }
 
+.hot-ad__text-pink-results,
 .hot-ad__text-pink {
     text-transform: uppercase;
     line-height: 2;
@@ -424,9 +499,15 @@ body {
     font-size: 1.9rem;
 }
 
+.hot-ad__text-pink-results {
+    font-size: 1.6rem;
+    display: flex;
+}
+
 .hot-ad__text-par {
     line-height: 2;
     font-size: 1.1rem;
+    color: #888;
 }
 
 .strong {
@@ -434,12 +515,17 @@ body {
     font-size: 1.3rem;
 }
 
-.hot-ad__photo {
+.hot-ad__photo,
+.hot-ad__photo-results {
     background-image: url(../img/main.jpg);
     height: 19rem;
     width: 28rem;
     background-size: cover;
     background-position: center;
+}
+
+.hot-ad__photo-results {
+    width: 30%;
 }
 
 .hot-ads__btn{
@@ -471,10 +557,6 @@ body {
     color: #fff;
     font-weight: 500;
     font-size: 1.4rem;
-}
-
-main { /* For testing purposes only*/
-    height: 2000px;
 }
 
 .pet-food {
@@ -513,8 +595,13 @@ main { /* For testing purposes only*/
 .card-heading--bar,
 .card-heading--bar-result,
 .card-heading--bar-result2 {
-    border: #c7c7c7 solid 0.5px;
+    border: #c7c7c7 solid .5px;
     width: 100%;
+}
+
+.card-heading--bar-1 {
+    border: #383838 solid .5px;
+    width: 60%;
 }
 
 .card-heading--left {
@@ -689,7 +776,9 @@ main { /* For testing purposes only*/
 .pet-food__card-1,
 .pet-food__card-2,
 .pet-food__card-3,
-.pet-food__card-4{
+.pet-food__card-4,
+.search-results-items,
+.search-results-items-1{
     border-radius: 3px;
     border: #888 3px;
     box-shadow: 0 3px 14px rgba(0, 0, 0, .5);
@@ -700,8 +789,31 @@ main { /* For testing purposes only*/
 .pet-food__card-1:hover,
 .pet-food__card-2:hover,
 .pet-food__card-3:hover,
-.pet-food__card-4:hover {
+.pet-food__card-4:hover,
+.search-results-items:hover,
+.search-results-items-1:hover {
     transform: translateY(-1.5rem) scale(1.03);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+    background-color: #383838; 
+    margin-top: 3rem;  
+}
+
+.end {
+    font-size: 1.3rem;
+    color: #888;
+    padding-left: 1em;
+}
+
+.icons-2 {
+    font-size: 2rem;
+    color: #888;
+    padding-right: 1em;
 }
 
 
@@ -785,7 +897,7 @@ main { /* For testing purposes only*/
     }
 
     .pet-food {
-        height: 90rem; 
+        height: 130rem; 
         width: 100%;
     }
 
@@ -794,37 +906,37 @@ main { /* For testing purposes only*/
         grid-template-rows: 10% 30% 30% 30%;
         grid-gap: 2%;
         width: 95%;
-        height: 90%;
+        height: 120rem;
     }
 
     .pet-food__card {
         grid-column: 1/2;
         grid-row: 2/3;
-        height: 90%;   
+        height: 100%;   
     }
 
     .pet-food__card-1 {
         grid-column: 2/3;
         grid-row: 2/3;
-        height: 90%;    
+        height: 100%;    
     }
     
     .pet-food__card-2 {
         grid-column: 1/2;
         grid-row: 3/4;
-        height: 90%;  
+        height: 100%;  
     }
     
     .pet-food__card-3 {
         grid-column: 2/3;
         grid-row: 3/4;
-        height: 90%;   
+        height: 100%;   
     }
     
     .pet-food__card-4 {
         grid-column: 1/2;
         grid-row: 4/5;
-        height: 90%;   
+        height: 100%;   
     }
 
     .card-text--main {
@@ -833,6 +945,108 @@ main { /* For testing purposes only*/
     
     .card-text--sub {
         font-size: 1.2rem;
+    }
+
+    .search-results {
+        grid-template-columns: 50% 50% 50%;
+        grid-template-rows: 5% 50% 45% ;
+        height: 100rem;
+        padding: 1rem;
+    }
+
+    .search-results__heading {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    .card-heading--bar-result {
+        display: none;
+    }
+    
+    .card-heading--bar-result2 {
+        display: none;
+    }
+    
+    .search-results-items {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 2px;
+        margin: 0;
+        margin-top: 2rem;
+        box-shadow: 0 3px 14px rgba(0, 0, 0, .5);
+    }
+    
+    .search-results-items-1 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        padding: 2rem;
+        border-radius: 2px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 3px 14px rgba(0, 0, 0, .5);
+        margin-top: 2rem;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    .checkbox-2 {
+        display: none;
+    }
+
+    .search-results-image {
+        background-image: url(../img/pet3.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 100%;
+        width: 30%;
+    
+    }
+    
+    .search-results-text {
+        height: 30%;
+        width: 70%;
+        padding-left: 9px;
+    }
+
+    .hot-ads__btn{
+        width: 10rem ;
+        justify-content: flex-start;
+    }
+
+    .btn-search-2 {
+        padding: 8px 20.5px;
+    }
+
+   
+    .btn-search-1 {
+    padding: 8px 20px;
+    }
+
+    .hot-ad__text {
+        width: 74rem;
+        padding-left: .3em;
+        text-transform: uppercase;
+        color: #888;
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+
+    .end {
+        font-size: .9rem;
+        color: #888;
+        padding-left: 1em;
+    }
+    
+    .icons-2 {
+        font-size: 1.3rem;
+        color: #888;
+        padding-right: .5em;
     }
 
 
