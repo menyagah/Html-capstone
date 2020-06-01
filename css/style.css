@@ -932,6 +932,23 @@ body {
 }
 
 @media (max-width: 900px) {
+  .home-view {
+    display: none;
+  }
+
+  .btn-search__link {
+    font-size: 2rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    margin-top: 2rem;
+    display: flex;
+  }
+
   .pet-food {
     display: flex;
     justify-content: center;
