@@ -20,7 +20,11 @@ This is the design layout of an online pet feeds store, Mifugo. Mifugo is an e-c
 
 ## Getting Started
 
-This is a basic html5 and css3 webpage that is static. Simply clone or download the files from the github repo and click on index.html to launch the webpage.
+This is a basic html5 and css3 webpage that is static. 
+ - clone or download the files from the github repo 
+ - Open the file directory
+ - click on index.html to launch the webpage.
+ 
 
 - Below is a screenshot of the nextweb clone in action.
 
