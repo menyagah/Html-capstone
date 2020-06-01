@@ -15,7 +15,7 @@ This is the design layout of an online pet feeds store, Mifugo. Mifugo is an e-c
 
 ## Video Demo
 
-[Video Demo Link](https://www.loom.com/share/9553da83572e49e4b824b323f3bf0bee)
+[Video Demo Link](https://www.loom.com/share/e83a186e670841e388271cf88e8a6fe3)
 
 
 ## Getting Started
