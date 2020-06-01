@@ -1,0 +1,1405 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #383838;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  overflow: hidden;
+}
+
+.logo {
+  height: 5rem;
+  width: 8rem;
+  transition: all 0.2s;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+.header__nav-box {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 1em;
+}
+
+.nav-items {
+  width: 9rem;
+}
+
+.nav-items-0 {
+  width: 9rem;
+}
+
+.nav-items-1 {
+  width: 13rem;
+}
+
+.nav-items-1-btn {
+  width: 13rem;
+}
+
+.nav-items-btn {
+  display: none;
+}
+
+.header__icon {
+  padding-right: 0.6em;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 3;
+  color: #888;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.link-mobile {
+  display: none;
+}
+
+.link:hover {
+  color: #d35266;
+}
+
+.header__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: #d35266;
+  border-radius: 0.3em;
+  transition: all 0.2s;
+}
+
+.header__btn-1 {
+  display: none;
+}
+
+.header__btn:hover,
+.link:hover,
+.logo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(29, 29, 29, 0.7);
+}
+
+.header__btn:active,
+.link:active,
+.logo:active {
+  transform: translateY(-1px);
+}
+
+.header__btn-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 7;
+}
+
+.header__avatar-box {
+  display: flex;
+  align-items: center;
+  padding-right: 8em;
+}
+
+.user-nav__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4em;
+  cursor: pointer;
+  position: relative;
+}
+
+.chat__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #888;
+}
+
+.chat__icon:hover {
+  background-color: #383838;
+}
+
+.user-nav__notification {
+  font-size: 0.8rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  background-color: palevioletred;
+  color: #fff;
+  position: absolute;
+  top: -1rem;
+  right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-nav__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-nav__user-photo {
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 50%;
+}
+
+.user-nav__user-name {
+  color: #fff;
+  padding-right: 0.3em;
+}
+
+.user-nav__icon-box:hover {
+  transform: translateY(-3px);
+  transition: all 0.2s;
+  box-shadow: 0 0.01em 0.09em rgba(0, 0, 0, 0.2);
+}
+
+.user-nav__icon-box:active {
+  transform: translateY(-1px);
+}
+
+.main,
+.main-results {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgb(211, 82, 102, 0.8),
+      rgb(56, 56, 56, 0.8)
+    ),
+    url(../img/main.jpg);
+  height: 14%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-results {
+  justify-content: flex-start;
+  height: auto;
+  padding: 4rem;
+}
+
+.text-box,
+.text-box-results {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.text-box-results {
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.heading-primary,
+.heading-primary-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-results {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.heading-primary-main,
+.heading-primary-main-results {
+  display: block;
+  font-size: 6rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+}
+
+.heading-primary-sub,
+.heading-primary-sub-results {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-bottom: 4rem;
+}
+
+.heading-primary-sub-results {
+  padding-bottom: 1rem;
+}
+
+.heading-primary-main-results {
+  font-size: 3rem;
+}
+
+.text-box-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dropdown a {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.35rem;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  color: #383838;
+  padding: 16px 30px;
+  background-color: #fff;
+  font-family: inherit;
+  margin-right: 1px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #383838;
+  padding: 14px 40px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  color: #383838;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.input {
+  background-color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  padding: 10px 25px;
+  margin-right: 1px;
+}
+
+.btn-search,
+.btn-search-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 30px;
+  margin-left: 0.8rem;
+  background-color: #383838;
+  border-radius: 0.1em;
+  transition: all 0.2s;
+}
+
+.btn-search__link,
+.btn-search__link-1 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #888;
+  text-decoration: none;
+}
+
+.btn-search-1,
+.btn-search-2,
+.btn-search-1-results,
+.btn-search-2-results {
+  margin-left: 0;
+  margin-right: 0.09em;
+  padding: 8px 40px;
+  background-color: #d35266;
+  transition: all 0.2s;
+}
+
+.btn-search-1-results,
+.btn-search-2-results {
+  margin-right: 0.1em;
+}
+
+.btn-search-2 {
+  padding: 8px 73.5px;
+}
+
+.btn-search__link-1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.btn-search:hover,
+.btn-search-1:hover,
+.btn-search-2:hover,
+.btn-search-1-results:hover,
+.btn-search-2-results:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.btn-search:active,
+.btn-search-1:active,
+.btn-search-2:active,
+.btn-search-1-results:active,
+.btn-search-2-results:active {
+  transform: translateY(-1px);
+}
+
+.mobile {
+  display: none;
+}
+
+/* search results css* for the results section */
+.search-results {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 8% 45% 47%;
+  height: 75rem;
+  padding: 3rem;
+}
+
+.search-results__heading {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+}
+
+.card-heading--bar-result {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.card-heading--bar-result2 {
+  grid-column: 1/2;
+  grid-row: 1/5;
+  background-color: #f9f9f9;
+}
+
+.search-results-items {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+  width: 95%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 2px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
+}
+
+.search-results-items-1 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  padding: 2rem;
+  height: 90%;
+  width: 95%;
+  margin-left: 2rem;
+  overflow: hidden;
+  margin-top: 3rem;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
+}
+
+.search-results-image {
+  background-image: url(../img/pet3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 45%;
+}
+
+.search-results-text {
+  height: 85%;
+  width: 70%;
+  padding-left: 9px;
+}
+
+.checkbox {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.checkbox-2 {
+  grid-column: 1/2;
+  grid-row: 2/5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.checkbox-cont--top {
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-text {
+  padding-left: 1rem;
+  font-size: 2rem;
+  padding-right: 1rem;
+  color: #646363;
+}
+
+.checkbox-heading {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #383838;
+}
+
+.checkbox-2__cont {
+  padding-top: 3rem;
+}
+
+.hot-ad,
+.hot-ad__cont,
+.hot-ads__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hot-ad {
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(255, 254, 254, 0.8),
+      rgba(255, 253, 253, 0.8)
+    );
+}
+
+.hot-ad__main {
+  padding: 7px;
+  border-radius: 2px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.hot-ad__main:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.hot-ad__cont,
+.hot-ad__cont-results {
+  justify-content: space-between;
+  width: 74rem;
+}
+
+.hot-ad__text {
+  width: 74rem;
+  padding-left: 0.3em;
+  text-transform: uppercase;
+  color: #888;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.hot-ad__text-pink-results,
+.hot-ad__text-pink {
+  text-transform: uppercase;
+  line-height: 2;
+  color: #d35266;
+  font-size: 1.9rem;
+}
+
+.hot-ad__text-pink-results {
+  font-size: 1.6rem;
+  display: flex;
+}
+
+.hot-ad__text-par {
+  line-height: 2;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.strong {
+  line-height: 1;
+  font-size: 1.3rem;
+}
+
+.hot-ad__photo,
+.hot-ad__photo-results {
+  background-image: url(../img/main.jpg);
+  height: 19rem;
+  width: 28rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.hot-ad__photo-results {
+  width: 30%;
+}
+
+.hot-ads__btn {
+  width: 34rem;
+  justify-content: flex-start;
+}
+
+.pet-food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45rem;
+  background-color: rgb(241, 241, 241);
+}
+
+.pet-food__grid {
+  display: grid;
+  grid-template-columns: 19% 19% 19% 19% 19%;
+  grid-template-rows: 10% 79%;
+  grid-gap: 1%;
+  width: 95%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-heading {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-heading--cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-heading--bar,
+.card-heading--bar-result,
+.card-heading--bar-result2 {
+  border: #c7c7c7 solid 0.5px;
+  width: 100%;
+}
+
+.card-heading--bar-1 {
+  border: #383838 solid 0.5px;
+  width: 60%;
+}
+
+.card-heading--left {
+  font-size: 1.6rem;
+  color: #646363;
+  font-weight: 300;
+}
+
+.card-heading__main {
+  color: #383838;
+  font-weight: 900;
+  font-size: 1.9rem;
+}
+
+.pet-food__card {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+.pet-food__card-1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.pet-food__card-2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.pet-food__card-3 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.pet-food__card-4 {
+  grid-column: 5/6;
+  grid-row: 2/3;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.card-image,
+.card-image-1,
+.card-image-2,
+.card-image-3,
+.card-image-4,
+.card-image--1,
+.card-image--2,
+.card-image--3,
+.card-image--4,
+.card-image--5,
+.card-image---1,
+.card-image---2,
+.card-image---3,
+.card-image---4,
+.card-image---5 {
+  height: 50%;
+  background-image: url(../img/kiwi-food.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image-1 {
+  background-image: url(../img/dog-food2.jpg);
+}
+
+.card-image-2 {
+  background-image: url(../img/meow-mix.jpg);
+}
+
+.card-image-3 {
+  background-image: url(../img/hamster.jpg);
+}
+
+.card-image-4 {
+  background-image: url(../img/horse.png);
+}
+
+.card-image--1 {
+  background-image: url(../img/pet1.jpg);
+}
+
+.card-image--2 {
+  background-image: url(../img/pet2.jpg);
+}
+
+.card-image--3 {
+  background-image: url(../img/pet3.jpg);
+}
+
+.card-image--4 {
+  background-image: url(../img/pet4.jpg);
+}
+
+.card-image--5 {
+  background-image: url(../img/pet5.jpg);
+}
+
+.card-image---1 {
+  background-image: url(../img/e1.jpg);
+}
+
+.card-image---2 {
+  background-image: url(../img/e2.jpg);
+}
+
+.card-image---3 {
+  background-image: url(../img/e3.jpg);
+}
+
+.card-image---4 {
+  background-image: url(../img/e4.jpg);
+}
+
+.card-image---5 {
+  background-image: url(../img/e5.jpg);
+}
+
+.card-text {
+  height: 32%;
+  padding: 3%;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  height: 20%;
+}
+
+.card-text--main {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #383838;
+  line-height: 1;
+}
+
+.card-text--sub {
+  color: #d35266;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.card-text--last {
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.card-text--region {
+  color: #383838;
+}
+
+.card__icon {
+  height: 3rem;
+  width: 3rem;
+  fill: #888;
+}
+
+.pet-food__card,
+.pet-food__card-1,
+.pet-food__card-2,
+.pet-food__card-3,
+.pet-food__card-4,
+.search-results-items,
+.search-results-items-1 {
+  border-radius: 3px;
+  border: #888 3px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.pet-food__card:hover,
+.pet-food__card-1:hover,
+.pet-food__card-2:hover,
+.pet-food__card-3:hover,
+.pet-food__card-4:hover,
+.search-results-items:hover,
+.search-results-items-1:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 15rem;
+  align-items: center;
+  background-color: #383838;
+}
+
+.end {
+  font-size: 1.8rem;
+  color: #fff;
+  padding-left: 1em;
+}
+
+.icons-2 {
+  font-size: 2.8rem;
+  color: #fff;
+  padding-right: 1em;
+}
+
+@media (max-width: 1200px) {
+  .pet-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90rem;
+    background-color: rgb(241, 241, 241);
+  }
+
+  .pet-food__grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 10% 43% 43%;
+    grid-gap: 1%;
+    width: 95%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-heading {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-heading--cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-heading--bar,
+  .card-heading--bar-result,
+  .card-heading--bar-result2 {
+    border: #c7c7c7 solid 0.5px;
+    width: 100%;
+  }
+
+  .card-heading--bar-1 {
+    border: #383838 solid 0.5px;
+    width: 60%;
+  }
+
+  .card-heading--left {
+    font-size: 1.6rem;
+    color: #646363;
+    font-weight: 300;
+  }
+
+  .card-heading__main {
+    color: #383838;
+    font-weight: 900;
+    font-size: 1.9rem;
+  }
+
+  .pet-food__card {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+  }
+
+  .pet-food__card-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+
+  .pet-food__card-2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+
+  .pet-food__card-3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+
+  .pet-food__card-4 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-view {
+    display: none;
+  }
+
+  .btn-search__link {
+    font-size: 2rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    margin-top: 2rem;
+    display: flex;
+  }
+
+  .pet-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120rem;
+    background-color: rgb(241, 241, 241);
+  }
+
+  .pet-food__grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 10% 28% 28% 28%;
+    grid-gap: 1%;
+    width: 95%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-heading {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-heading--cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-heading--bar,
+  .card-heading--bar-result,
+  .card-heading--bar-result2 {
+    border: #c7c7c7 solid 0.5px;
+    width: 100%;
+  }
+
+  .card-heading--bar-1 {
+    border: #383838 solid 0.5px;
+    width: 60%;
+  }
+
+  .card-heading--left {
+    font-size: 1.6rem;
+    color: #646363;
+    font-weight: 300;
+  }
+
+  .card-heading__main {
+    color: #383838;
+    font-weight: 900;
+    font-size: 1.9rem;
+  }
+
+  .pet-food__card {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+  }
+
+  .pet-food__card-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+
+  .pet-food__card-2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+
+  .pet-food__card-3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+
+  .pet-food__card-4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    overflow: hidden;
+    padding-left: 0;
+  }
+
+  .logo {
+    height: 5rem;
+    width: 5rem;
+    display: none;
+  }
+
+  .header__btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: #d35266;
+    border-radius: 0.3em;
+    transition: all 0.2s;
+  }
+
+  .header__btn-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .header__avatar-box {
+    padding-right: 1em;
+  }
+
+  .user-nav__icon-box {
+    padding: 0 1em;
+  }
+
+  .user-nav__user-photo {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+
+  .user-nav__user-name {
+    color: #fff;
+    padding-right: 0.06em;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .nav-items-0 {
+    width: 4rem;
+  }
+
+  .nav-items-1 {
+    width: 4rem;
+  }
+
+  .nav-items-1-btn {
+    display: none;
+  }
+
+  .nav-items-btn {
+    width: 9rem;
+  }
+
+  .header__icon {
+    padding-right: 0.6em;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .link-mobile {
+    display: inline;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 3;
+    color: #888;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+
+  .user-nav__notification {
+    right: -0.1rem;
+  }
+
+  .input,
+  .text-box-1,
+  .btn-search,
+  .hot-ad {
+    width: 100%;
+  }
+
+  .input {
+    background-color: #fff;
+    border: none;
+    font-size: 1rem;
+    padding: 2px 8px;
+    margin-right: 1px;
+    width: 40%;
+    height: 5rem;
+  }
+
+  .text-box-1 {
+    height: 5rem;
+  }
+
+  .btn-search {
+    height: 5rem;
+    margin-left: 0.5rem;
+    padding: 2px 10px;
+    width: 60%;
+  }
+
+  .btn-search__link,
+  .btn-search__link-1 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+  }
+
+  .home-view {
+    display: none;
+  }
+
+  .btn-search__link {
+    font-size: 2rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    margin-top: 2rem;
+    display: flex;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 1rem;
+    font-weight: 300;
+    height: 5rem;
+    border: none;
+    outline: none;
+    color: #383838;
+    padding: 13px 20px;
+    background-color: #fff;
+    font-family: inherit;
+    margin-right: 1px;
+  }
+
+  .main {
+    height: 30rem;
+    overflow: hidden;
+  }
+
+  .heading-primary-main {
+    font-size: 6rem;
+  }
+
+  .heading-primary-sub {
+    font-size: 0.8rem;
+    font-weight: 900;
+  }
+
+  .card-heading--left {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .card-heading__main {
+    font-size: 1.8rem;
+  }
+
+  .pet-food {
+    width: 100%;
+    height: 300rem;
+  }
+
+  .pet-food__grid {
+    grid-template-columns: 90%;
+    grid-template-rows: 2% 18% 18% 18% 18% 18%;
+    grid-gap: 1%;
+    width: 95%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .pet-food__card {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    height: 100%;
+  }
+
+  .pet-food__card-1 {
+    grid-column: 1/6;
+    grid-row: 3/4;
+    height: 100%;
+  }
+
+  .pet-food__card-2 {
+    grid-column: 1/6;
+    grid-row: 4/5;
+    height: 100%;
+  }
+
+  .pet-food__card-3 {
+    grid-column: 1/6;
+    grid-row: 5/6;
+    height: 100%;
+  }
+
+  .pet-food__card-4 {
+    grid-column: 1/6;
+    grid-row: 6/7;
+    height: 100%;
+  }
+
+  .card-text--main {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .card-text--sub {
+    font-size: 1.6rem;
+  }
+
+  .card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    height: 2%;
+  }
+
+  .search-results {
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 5% 50% 45%;
+    height: 120rem;
+    padding: 1rem;
+  }
+
+  .search-results__heading {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .card-heading--bar-result {
+    display: none;
+  }
+
+  .card-heading--bar-result2 {
+    display: none;
+  }
+
+  .card-text--last {
+    color: #888;
+    font-size: 1.5rem;
+    padding-top: 1.4em;
+  }
+
+  .card-text--region {
+    color: #383838;
+  }
+
+  .search-results-items {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    width: 100%;
+    margin: 0;
+    margin-top: 2rem;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
+  }
+
+  .search-results-items-1 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 2rem;
+    border-radius: 2px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkbox-2 {
+    display: none;
+  }
+
+  .search-results-image {
+    background-image: url(../img/pet3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+  }
+
+  .search-results-text {
+    height: 50%;
+    width: 100%;
+  }
+
+  .hot-ads__btn {
+    width: 10rem;
+    justify-content: flex-start;
+  }
+
+  .btn-search-2 {
+    padding: 8px 20.5px;
+  }
+
+  .btn-search-1 {
+    padding: 8px 20px;
+  }
+
+  .hot-ad__text {
+    width: 74rem;
+    padding-left: 0.3em;
+    text-transform: uppercase;
+    color: #888;
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15rem;
+    align-items: center;
+    background-color: #383838;
+  }
+
+  .end {
+    font-size: 1.7rem;
+    color: #fff;
+    padding-left: 1em;
+  }
+
+  .icons-2 {
+    font-size: 3rem;
+    color: #fff;
+    padding-right: 1em;
+    padding-top: 1em;
+  }
+}
