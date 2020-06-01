@@ -11,7 +11,7 @@ This is the design layout of an online pet feeds store, Mifugo. Mifugo is an e-c
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/menyagah/Html-capstone/9eaf0da9604e818d4c97d3e05408de17fc19e33d/index.html)
+[Live Demo Link](https://rawcdn.githack.com/menyagah/Html-capstone/cc1c0d5a55ea73250d96674a71a8e84bdd7ec459/index.html)
 
 ## Video Demo
 
