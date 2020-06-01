@@ -56,7 +56,6 @@ body {
   width: 13rem;
 }
 
-
 .nav-items-btn {
   display: none;
 }
@@ -613,7 +612,6 @@ body {
 .card-heading--cont {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .card-heading--bar,
@@ -825,7 +823,6 @@ body {
   height: 15rem;
   align-items: center;
   background-color: #383838;
-
 }
 
 .end {
@@ -840,8 +837,6 @@ body {
   padding-right: 1em;
 }
 
-
-
 @media (max-width: 1200px) {
   .pet-food {
     display: flex;
@@ -850,7 +845,7 @@ body {
     height: 90rem;
     background-color: rgb(241, 241, 241);
   }
-  
+
   .pet-food__grid {
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -861,44 +856,43 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+
   .card-heading {
     grid-column: 1/6;
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
   }
-  
+
   .card-heading--cont {
     display: flex;
     justify-content: space-between;
-    
   }
-  
+
   .card-heading--bar,
   .card-heading--bar-result,
   .card-heading--bar-result2 {
     border: #c7c7c7 solid 0.5px;
     width: 100%;
   }
-  
+
   .card-heading--bar-1 {
     border: #383838 solid 0.5px;
     width: 60%;
   }
-  
+
   .card-heading--left {
     font-size: 1.6rem;
     color: #646363;
     font-weight: 300;
   }
-  
+
   .card-heading__main {
     color: #383838;
     font-weight: 900;
     font-size: 1.9rem;
   }
-  
+
   .pet-food__card {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -907,28 +901,28 @@ body {
     flex-direction: column;
     background-color: #f9f9f9;
   }
-  
+
   .pet-food__card-1 {
     grid-column: 2/3;
     grid-row: 2/3;
     height: 100%;
     background-color: #f9f9f9;
   }
-  
+
   .pet-food__card-2 {
     grid-column: 3/4;
     grid-row: 2/3;
     height: 100%;
     background-color: #f9f9f9;
   }
-  
+
   .pet-food__card-3 {
     grid-column: 1/2;
     grid-row: 3/4;
     height: 100%;
     background-color: #f9f9f9;
   }
-  
+
   .pet-food__card-4 {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -945,55 +939,54 @@ body {
     height: 120rem;
     background-color: rgb(241, 241, 241);
   }
-  
+
   .pet-food__grid {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 10% 28% 28% 28%;
     grid-gap: 1%;
     width: 95%;
-    height: 100%; 
+    height: 100%;
     justify-content: center;
     align-items: center;
   }
-  
+
   .card-heading {
     grid-column: 1/6;
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
   }
-  
+
   .card-heading--cont {
     display: flex;
     justify-content: space-between;
-    
   }
-  
+
   .card-heading--bar,
   .card-heading--bar-result,
   .card-heading--bar-result2 {
     border: #c7c7c7 solid 0.5px;
     width: 100%;
   }
-  
+
   .card-heading--bar-1 {
     border: #383838 solid 0.5px;
     width: 60%;
   }
-  
+
   .card-heading--left {
     font-size: 1.6rem;
     color: #646363;
     font-weight: 300;
   }
-  
+
   .card-heading__main {
     color: #383838;
     font-weight: 900;
     font-size: 1.9rem;
   }
-  
+
   .pet-food__card {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -1002,28 +995,28 @@ body {
     flex-direction: column;
     background-color: #f9f9f9;
   }
-  
+
   .pet-food__card-1 {
     grid-column: 2/3;
     grid-row: 2/3;
     height: 100%;
     background-color: #f9f9f9;
   }
-  
+
   .pet-food__card-2 {
     grid-column: 1/2;
     grid-row: 3/4;
     height: 100%;
     background-color: #f9f9f9;
   }
-  
+
   .pet-food__card-3 {
     grid-column: 2/3;
     grid-row: 3/4;
     height: 100%;
     background-color: #f9f9f9;
   }
-  
+
   .pet-food__card-4 {
     grid-column: 1/2;
     grid-row: 4/5;
@@ -1045,22 +1038,20 @@ body {
   }
 
   .header__btn-1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 4rem;
-      background-color: #d35266;
-      border-radius: 0.3em;
-      transition: all 0.2s;
-    }
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: #d35266;
+    border-radius: 0.3em;
+    transition: all 0.2s;
+  }
 
   .header__btn-link {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 400;
-    
   }
 
   .header__avatar-box {
@@ -1105,7 +1096,7 @@ body {
     padding-right: 0.6em;
   }
 
-  .link{
+  .link {
     display: none;
   }
 
@@ -1147,17 +1138,17 @@ body {
 
   .btn-search {
     height: 5rem;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     padding: 2px 10px;
     width: 60%;
   }
 
   .btn-search__link,
   .btn-search__link-1 {
-  font-size: 2rem;
-  font-weight: 300;
-  color: rgb(255, 253, 253);
-  text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(255, 253, 253);
+    text-decoration: none;
   }
 
   .home-view {
@@ -1189,7 +1180,7 @@ body {
     font-family: inherit;
     margin-right: 1px;
   }
-  
+
   .main {
     height: 30rem;
     overflow: hidden;
@@ -1200,7 +1191,7 @@ body {
   }
 
   .heading-primary-sub {
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 900;
   }
 
@@ -1299,7 +1290,7 @@ body {
     font-size: 1.5rem;
     padding-top: 1.4em;
   }
-  
+
   .card-text--region {
     color: #383838;
   }
@@ -1349,7 +1340,6 @@ body {
   .search-results-text {
     height: 50%;
     width: 100%;
-    
   }
 
   .hot-ads__btn {
@@ -1374,18 +1364,6 @@ body {
     line-height: 2;
   }
 
-  .end {
-    font-size: 0.9rem;
-    color: #888;
-    padding-left: 1em;
-  }
-
-  .icons-2 {
-    font-size: 1.3rem;
-    color: #888;
-    padding-right: 0.5em;
-  }
-
   .footer {
     display: flex;
     flex-direction: column;
@@ -1393,7 +1371,6 @@ body {
     height: 15rem;
     align-items: center;
     background-color: #383838;
-  
   }
 
   .end {
@@ -1401,12 +1378,11 @@ body {
     color: #fff;
     padding-left: 1em;
   }
-  
+
   .icons-2 {
     font-size: 3rem;
     color: #fff;
     padding-right: 1em;
     padding-top: 1em;
   }
-  
 }
