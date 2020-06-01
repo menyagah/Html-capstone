@@ -14,16 +14,22 @@
                 <li class="nav-items">
                     <a href="#" class="logo"><img src="img/unnamed.png" alt="logo" class="logo"></a>
                 </li>
-                <li class="nav-items">
-                    <a href="#" class="link" ><ion-icon name="home" class="header__icon"></ion-icon>Home</a>
+                <li class="nav-items-0">
+                    <a href="index.html" class="link" ><ion-icon name="home" class="header__icon"></ion-icon>Home</a>
+                    <a href="#" class="link-mobile" ><ion-icon name="home" class="header__icon"></ion-icon></a>
                 </li>
                 <li class="nav-items-1">
                     <a href="pages/results.html" class="link"><ion-icon name="apps" class="header__icon"></ion-icon>Collections</a>
+                    <a href="pages/results.html" class="link-mobile"><ion-icon name="apps" class="header__icon"></ion-icon></a>
                 </li>
                 <li class="nav-items-1">
                     <a href="#" class="link"><ion-icon name="cart" class="header__icon"></ion-icon>Purchase List</a>
+                    <a href="#" class="link-mobile"><ion-icon name="cart" class="header__icon"></ion-icon></a>
                 </li>
-                <li class="nav-items-1 header__btn">
+                <li class="nav-items-1-btn header__btn">
+                    <a href="#" class="header__btn-link">POST AN AD</a>
+                </li>
+                <li class="nav-items-btn header__btn-1">
                     <a href="#" class="header__btn-link">POST AN AD</a>
                 </li>
             </ul>
@@ -44,6 +50,8 @@
         </nav>
     </header>
 
+    
+
     <main>
         <section class="main">
             <div class="text-box">
@@ -53,7 +61,7 @@
                 </h1>
 
                 
-                   <div class="text-box-1">
+                   <div class="text-box-1 home-view">
                        <div class="heading-btn__cont">
                            <div class="dropdown">
                             <button class="dropbtn"><ion-icon name="caret-down-outline"></ion-icon>All Departments</button>
@@ -67,21 +75,22 @@
                     </div>
                     
         
-                    <input type="text"  placeholder="What are you looking for" class="input">
+                    <input type="text"  placeholder="What are you looking for" class="input home-view">
         
-                    <input type="text"  placeholder="pick your location" class="input">
+                    <input type="text"  placeholder="pick your location" class="input home-view">
         
                     <div class="btn-search">
-                        <a href="#" class="btn-search__link">Search</a>
+                        <a href="#" class="btn-search__link home-view">Search</a>
                     </div> 
                 
                 </div>
+               
             </div>
     
             
         </section>
 
-        <section class="hot-ad">
+        <section class="hot-ad home-view">
             <div class="hot-ad__main">
                 <h2 class="hot-ad__text">hot ads</h2>
             <div class="hot-ad__cont">
@@ -113,7 +122,7 @@
             <div class="pet-food__grid">
                 <div class="card-heading">
                     <div class="card-heading--cont">
-                        <h2 class="card-heading--left"> <span class="card-heading__main">Feeds</span>  (cereals, Cat Food, Dog Food, Hamster Feed ....)</h2>
+                        <h3 class="card-heading--left"> <span class="card-heading__main">Feeds</span>  (cereals, Cat Food, Dog Food, Hamster Feed ....)</h3>
                         <a href="#" class="card-text--sub">View All</a>
                     </div>
                     <div class="card-heading--bar"></div>
@@ -122,8 +131,8 @@
                 <div class="pet-food__card">
                     <div class="card-image"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Kiwi: New Improved public certified cereal</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Kiwi: New Improved public certified cereal<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Murang'a, Kenya</span></p>
                     </div>
@@ -131,15 +140,15 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$400</h3>
+                        <h5 class="card-text--sub">$400</h5>
                     </div>
                 </div>
 
                 <div class="pet-food__card-1">
                     <div class="card-image-1"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Dog: New Improved public certified cereal</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Dog: New Improved public certified cereal<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Seattle, Us</span></p>
                     </div>
@@ -147,7 +156,7 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$230</h3>
+                        <h5 class="card-text--sub">$230</h5>
                     </div>
                     
                 </div>
@@ -155,8 +164,8 @@
                 <div class="pet-food__card-2">
                     <div class="card-image-2"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Cat: New Improved public certified meow cereals</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Cat: New Improved public certified meow cereals<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Seattle, Us</span></p>
                     </div>
@@ -164,15 +173,15 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$230</h3>
+                        <h5 class="card-text--sub">$230</h5>
                     </div>
                 </div>
 
                 <div class="pet-food__card-3">
                     <div class="card-image-3"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Hamster: Hamster cereals GIVE AWAY!!!!</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Hamster: Hamster cereals GIVE AWAY!!!!<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Seattle, Us</span></p>
                     </div>
@@ -180,15 +189,15 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$43!!!!</h3>
+                        <h5 class="card-text--sub">$43!!!!</h5>
                     </div>
                 </div>
 
                 <div class="pet-food__card-4">
                     <div class="card-image-4"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Horse: The stallion cereals GIVE AWAY!!!!</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Horse: The stallion cereals GIVE AWAY!!!!<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Kiambu, Ke</span></p>
                     </div>
@@ -196,7 +205,7 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$430!</h3>
+                        <h5 class="card-text--sub">$430!</h5>
                     </div>
                 </div>
             </div>
@@ -206,7 +215,7 @@
             <div class="pet-food__grid">
                 <div class="card-heading">
                     <div class="card-heading--cont">
-                        <h2 class="card-heading--left"> <span class="card-heading__main">Pets</span>  (Rabbits, Monkeys, Cats, Dogs ....)</h2>
+                        <h3 class="card-heading--left"> <span class="card-heading__main">Pets</span>  (Rabbits, Monkeys, Cats, Dogs ....)</h3>
                         <a href="#" class="card-text--sub">View All</a>
                     </div>
                     <div class="card-heading--bar"></div>
@@ -215,8 +224,8 @@
                 <div class="pet-food__card">
                     <div class="card-image--1"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Rabbit: Trained Pet. She needs a new home.</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Rabbit: Trained Pet. She needs a new home.<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Murang'a, Kenya</span></p>
                     </div>
@@ -224,15 +233,15 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$400</h3>
+                        <h5 class="card-text--sub">$400</h5>
                     </div>
                 </div>
 
                 <div class="pet-food__card-1">
                     <div class="card-image--2"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Dog: Well trained and vaccined. Certified.</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Dog: Well trained and vaccined. Certified.<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Seattle, Us</span></p>
                     </div>
@@ -240,7 +249,7 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$230</h3>
+                        <h5 class="card-text--sub">$230</h5>
                     </div>
                     
                 </div>
@@ -248,8 +257,8 @@
                 <div class="pet-food__card-2">
                     <div class="card-image--3"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Dog: He's an ex army sniffer, well trained dog. Crazy deal!</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Dog: He's an ex army sniffer, well trained dog. Crazy deal!</br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Seattle, Us</span></p>
                     </div>
@@ -257,15 +266,15 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$230</h3>
+                        <h5 class="card-text--sub">$230</h5>
                     </div>
                 </div>
 
                 <div class="pet-food__card-3">
                     <div class="card-image--4"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Dog: Well trained, well mannered, mans best friend</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Dog: Well trained, well mannered, mans best friend<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Seattle, Us</span></p>
                     </div>
@@ -273,15 +282,15 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$43!!!!</h3>
+                        <h5 class="card-text--sub">$43!!!!</h5>
                     </div>
                 </div>
 
                 <div class="pet-food__card-4">
                     <div class="card-image--5"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Monkey: Born and raised indoors.</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Monkey: Born and raised indoors.<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Kiambu, Ke</span></p>
                     </div>
@@ -289,7 +298,7 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$430!</h3>
+                        <h5 class="card-text--sub">$430!</h5>
                     </div>
                 </div>
             </div>
@@ -300,7 +309,7 @@
             <div class="pet-food__grid">
                 <div class="card-heading">
                     <div class="card-heading--cont">
-                        <h2 class="card-heading--left"> <span class="card-heading__main">Equipment</span>  (Trendmills, Plates, Harness ....)</h2>
+                        <h3 class="card-heading--left"> <span class="card-heading__main">Equipment</span>  (Trendmills, Plates, Harness ....)</h3>
                         <a href="#" class="card-text--sub">View All</a>
                     </div>
                     <div class="card-heading--bar"></div>
@@ -309,8 +318,8 @@
                 <div class="pet-food__card">
                     <div class="card-image---1"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Combs: For cats and dogs</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Combs: For cats and dogs</br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Murang'a, Kenya</span></p>
                     </div>
@@ -318,15 +327,15 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$400</h3>
+                        <h5 class="card-text--sub">$400</h5>
                     </div>
                 </div>
 
                 <div class="pet-food__card-1">
                     <div class="card-image---2"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Trendmills: For the big dogs</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Trendmills: For the big dogs<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Seattle, Us</span></p>
                     </div>
@@ -334,7 +343,7 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$230</h3>
+                        <h5 class="card-text--sub">$230</h5>
                     </div>
                     
                 </div>
@@ -342,8 +351,8 @@
                 <div class="pet-food__card-2">
                     <div class="card-image---3"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Pet plates: New plates for your pet.</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Pet plates: New plates for your pet.<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Seattle, Us</span></p>
                     </div>
@@ -351,15 +360,15 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$230</h3>
+                        <h5 class="card-text--sub">$230</h5>
                     </div>
                 </div>
 
                 <div class="pet-food__card-3">
                     <div class="card-image---4"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Cat: Get the cat pack...</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Cat: Get the cat pack...<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Seattle, Us</span></p>
                     </div>
@@ -367,15 +376,15 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$43!!!!</h3>
+                        <h5 class="card-text--sub">$43!!!!</h5>
                     </div>
                 </div>
 
                 <div class="pet-food__card-4">
                     <div class="card-image---5"></div>
                     <div class="card-text">
-                        <h3 class="card-text--main">Ball: Playing balls for pets at ....</h3>
-                        <h3 class="card-text--sub">New</h3>
+                        <h4 class="card-text--main">Ball: Playing balls for pets at ....<br>
+                        <span class="card-text--sub">New</span></h4>
 
                         <p class="card-text--last">From: <span class="card-text--region">Kiambu, Ke</span></p>
                     </div>
@@ -383,7 +392,7 @@
                         <svg class="card__icon">
                             <a href="#"><use xlink:href="img/sprite.svg#icon-squared-plus"></use></a>
                         </svg>
-                        <h3 class="card-text--sub">$430!</h3>
+                        <h5 class="card-text--sub">$430!</h5>
                     </div>
                 </div>
             </div>
