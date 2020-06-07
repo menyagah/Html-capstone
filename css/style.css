@@ -478,6 +478,7 @@ body {
 .checkbox-text {
   padding-left: 1rem;
   font-size: 2rem;
+  margin-top: -1rem;
   padding-right: 1rem;
   color: #646363;
 }
