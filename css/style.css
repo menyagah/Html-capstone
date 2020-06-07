@@ -538,6 +538,7 @@ body {
   padding-left: 0.3em;
   text-transform: uppercase;
   color: #888;
+  padding-left: 1.8em;
   font-size: 1.5rem;
   line-height: 2;
 }
@@ -625,6 +626,10 @@ body {
 .card-heading--bar-1 {
   border: #383838 solid 0.5px;
   width: 60%;
+}
+
+.card-heading--bar-result {
+  margin-left: 2rem;
 }
 
 .card-heading--left {
