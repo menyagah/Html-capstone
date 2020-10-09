@@ -336,12 +336,19 @@ body {
 }
 
 .btn-search-1,
-.btn-search-2,
 .btn-search-1-results,
 .btn-search-2-results {
   margin-left: 0;
   margin-right: 0.09em;
   padding: 8px 40px;
+  background-color: #d35266;
+  transition: all 0.2s;
+}
+
+.btn-search-2 {
+  margin-left: 0;
+  margin-right: 0.01em;
+  padding: 2px 20px;
   background-color: #d35266;
   transition: all 0.2s;
 }
