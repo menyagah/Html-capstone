@@ -347,6 +347,7 @@ body {
 
 .btn-search-2 {
   margin-left: 0;
+  display: flex;
   margin-right: 0.01em;
   padding: 2px 20px;
   background-color: #d35266;
