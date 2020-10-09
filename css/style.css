@@ -359,9 +359,9 @@ body {
   margin-right: 0.1em;
 }
 
-.btn-search-2 {
-  padding: 8px 73.5px;
-}
+ .btn-search-2 {
+  padding: 8px 40.5px;
+} 
 
 .btn-search__link-1 {
   color: #fff;
@@ -582,6 +582,7 @@ body {
   width: 28rem;
   background-size: cover;
   background-position: center;
+  margin-right: 8px;
 }
 
 .hot-ad__photo-results {
