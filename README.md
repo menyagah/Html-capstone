@@ -26,7 +26,7 @@ This is a basic html5 and css3 webpage that is static.
  - click on index.html to launch the webpage.
  
 
-- Below is a screenshot of the nextweb clone in action.
+- Below is a screenshot of the website in action.
 
 ![screenshot](img/screenshot.jpg)
 
